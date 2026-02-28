@@ -4,7 +4,7 @@ from google import genai
 
 
 
-GOOGLE_API_KEY = st.secrets["AIzaSyA8rLVJXHPJhLwAmZwP8_mZEWk6bCFwG2M"]
+GOOGLE_API_KEY = st.secrets["AIzaSyCL8D8C28ZiXbyygIEJ0glLUPdrCTzFayE"]
 
 
 client = genai.Client(api_key=GOOGLE_API_KEY)
@@ -41,5 +41,6 @@ if st.button("Check Authenticity", type="primary"):
         except Exception as e:
            
             st.error(f"Error: {e}")
+
 
 
